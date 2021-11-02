@@ -1,0 +1,9 @@
+.secrgh {
+	padding: 15px 40px;
+}
+
+@media only screen and (max-width: 750px) {
+	.secrgh {
+		padding: 55px 20px 15px 20px;
+	}
+}

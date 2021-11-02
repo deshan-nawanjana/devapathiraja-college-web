@@ -1,0 +1,42 @@
+@font-face {
+	font-family: "Uncode Regular";
+	src: url(bin/fonts/Uncode-Regular.woff2);
+}
+@font-face {
+	font-family: "DashIcons Regular";
+	src: url(bin/fonts/dashicons.ttf);
+}
+@font-face {
+	font-family: "MaterialDesign Regular";
+	src: url(bin/fonts/md.ttf);
+}
+
+* {
+	outline: none;
+	user-select: none;
+	text-decoration: none;
+	font-family: "Uncode Regular";
+}
+
+body {
+	margin: 0px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.hide {
+	display: none;
+}
+
+.opa_btn {
+	width: 120px;
+	line-height: 40px;
+	display: inline-block;
+	overflow: hidden;
+	background: #800;
+	color: #FFF;
+	padding-left: 15px;
+	margin-top: 20px;
+}

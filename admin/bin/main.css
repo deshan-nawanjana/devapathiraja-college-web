@@ -1,0 +1,73 @@
+@font-face {
+	font-family: "Rubik Regular";
+	src: url(bin/fonts/Rubik-Regular.ttf);
+}
+@font-face {
+	font-family: "LineIcons Regular";
+	src: url(bin/fonts/LineIcons.764a78c4.ttf);
+}
+
+
+* {
+	outline: none;
+	user-select: none;
+	font-family: Rubik Regular, LineIcons Regular;
+}
+
+body {
+	margin: 0px;
+	overflow: hidden;
+}
+
+#ribbon {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 50px;
+	background: rgb(50,50,50);
+	width: 100%;
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.1);
+}
+
+.btn {
+	display: inline-block;
+	line-height: 50px;
+	overflow: hidden;
+	width: 120px;
+	text-align: center;
+	cursor: pointer;
+	color: #FFF;
+	transition: all 0.2s;
+	float: left;
+}
+
+.btn:hover { background: rgba(0,0,0,0.1); }
+.btn:active { background: rgba(0,0,0,0.18); }
+
+#opn { background: #4d94ff; }
+
+#frame {
+	position: fixed;
+	width: 100vw;
+	height: calc(100vh - 50px);
+	border: none;
+	top: 50px;
+	left: 0px;
+}
+
+.btr {
+	float: right;
+}
+
+.lbl {
+	display: inline-block;
+	line-height: 50px;
+	overflow: hidden;
+	width: 280px;
+	text-align: center;
+	color: #FFF;
+	transition: all 0.2s;
+	float: left;
+	text-align: left;
+	padding-left: 20px;
+}

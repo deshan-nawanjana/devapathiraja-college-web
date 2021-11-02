@@ -1,0 +1,52 @@
+.ribbon {
+	height: 70px;
+	line-height: 70px;
+	background: rgb(238,251,244);
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.rbnico {
+	width: 70px;
+	height: inherit;
+	background-image: url(bin/images/logo.jpg);
+	background-size: 55px auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.rbntxt {
+	display: inline-block;
+	overflow: hidden;
+	line-height: 70px;
+	height: 70px;
+	color: rgba(0,0,0,0.68);
+	font-size: 26px;
+}
+
+@media only screen and (max-width: 750px) {
+	.ribbon {
+		height: 50px;
+		line-height: 50px;
+		position: fixed;
+		width: 100%;
+		z-index: 1;
+		background: #800000;
+	}
+	.rbnico {
+		width: 50px;
+		height: inherit;
+		background-size: 45px auto;
+		float: left;
+		background-color: rgb(238,251,244);
+	}
+	.rbntxt {
+		overflow: hidden;
+		line-height: 50px;
+		height: 50px;
+		padding-left: 15px;
+		color: rgba(255,255,255,0.8);
+		font-size: 15px;
+	}
+}

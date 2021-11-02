@@ -1,0 +1,49 @@
+.slider {
+	background-image: url(bin/images/photo_1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.sldcvr {
+	padding: 60px 40px;
+	background: rgba(0,0,0,0.55);
+}
+
+.sldtxt {
+	max-width: 600px;
+	font-size: 18px;
+	color: rgba(255,255,255,0.65);
+}
+
+.sldbtn {
+	width: 120px;
+	line-height: 40px;
+	background: #800000;
+	color: #FFF;
+	font-size: 13px;
+	text-align: center;
+	margin-top: 20px;
+	color: rgba(255,255,255,0.75);
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 750px) {
+	.sldcvr {
+		padding: 90px 40px 40px 40px;
+	}
+	.sldtxt {
+		text-align: justify;
+		font-size: 14px;
+		color: rgba(255,255,255,0.65);
+	}
+	.sldbtn {
+		width: 100px;
+		line-height: 35px;
+		background: #800000;
+		color: #FFF;
+		font-size: 12px;
+		text-align: center;
+		margin-top: 20px;
+	}
+}

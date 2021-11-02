@@ -1,0 +1,173 @@
+.notice {
+	padding: 30px 60px;
+}
+
+.ntctxt {
+	font-weight: bold;
+	font-size: 26px;
+}
+
+.ntcpar {
+	text-align: justify;
+	color: rgba(0,0,0,0.76);
+	font-size: 14px;
+}
+
+.sector {
+	white-space: nowrap;
+}
+
+.seclft {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.secrgh {
+	width: 50vw;
+	display: inline-block;
+	white-space: normal;
+	vertical-align: top;
+	margin-top: 10px;
+}
+
+.ntclng {
+	color: #06c;
+	padding-top: 10px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 13px;
+}
+
+@media only screen and (max-width: 750px) {
+	.notice {
+		padding: 20px 30px;
+	}
+	.sector { white-space: normal; }
+	.seclft {
+		width: auto;
+	}
+
+	.secrgh {
+		width: auto;
+		display: block;
+		padding-top: 20px;
+		margin: 0px;
+	}
+}
+
+
+.ntc {
+	margin-bottom: 10px;
+	padding: 15px;
+	background: rgba(0,0,0,0.1);
+	margin-top: 20px;
+	padding-bottom: 30px;
+}
+
+.ntclbl {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: rgba(0,0,0,0.76);
+}
+
+.ntcprg {
+	text-align: justify;
+	font-size: 13px;
+	color: rgba(0,0,0,0.56);
+}
+
+.ntctog {
+	text-align: right;
+	margin-right: 20px;
+	padding-top: 10px;
+}
+
+.ntcbtn {
+	width: 100px;
+	background: #800;
+	line-height: 30px;
+	text-align: center;
+	color: #FFF;
+	margin: 20px 0px 20px 0px;
+	float: right;
+	cursor: pointer;
+}
+
+.mre {
+	width: 120px;
+	background: #800;
+	line-height: 40px;
+	color: #FFF;
+	text-align: center;
+	margin: 30px 0px;
+	cursor: pointer;
+	font-size: 14px;
+	display: none;
+	margin-left: calc(25vw - 30px);
+}
+
+@media only screen and (max-width: 750px) {
+	.ntctog {
+		text-align: right;
+		margin-right: 20px;
+		padding-top: 60px;
+	}
+	#ntcbox {
+		padding: 50px 20px 20px 20px;
+	}
+	.mre {
+		margin-left: calc(50vw - 60px);
+	}
+}
+
+/*=======================================================*/
+
+.n_title {
+	font-size: 22px;
+	color: #222;
+	margin: 10px auto;
+}
+
+.n_text {
+	color: #444;
+	text-align: justify;
+}
+
+.n_link {
+	color: #06c;
+}
+
+.n_snap {
+	max-height: 300px;
+	margin: 20px 0px;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 750px) {
+	.n_snap {
+		width: 70vw;
+		max-height: none;
+		height: auto;
+		cursor: pointer;
+	}
+}
+
+#load {
+	margin: 20px 0px 0px 20px;
+	display: block;
+}
+
+.ntcthb {
+	width: 200px;
+	height: 200px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	float: left;
+	margin: 0px 10px 0px 0px;
+}
+
+.ntce {
+	min-height: 220px;
+}

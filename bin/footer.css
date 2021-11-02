@@ -1,0 +1,19 @@
+.footer {
+	background: #800000;
+	padding: 20px;
+}
+
+
+
+.ftr_lbl {
+	padding: 10px 10px;
+}
+
+.ftr_lbl > a, .ftr_rbl > a {
+	color: #FFF;
+	font-family: Uncode Regular, MaterialDesign Regular;
+}
+
+.ftr_rbl {
+	text-align: right;
+}

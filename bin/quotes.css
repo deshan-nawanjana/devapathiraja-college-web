@@ -1,0 +1,30 @@
+.quotes {
+	text-align: center;
+	padding: 40px 60px;
+}
+
+.qtsdft {
+	font-size: 30px;
+	color: #333;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.qtsdfd {
+	font-size: 14px;
+	color: #555;
+}
+
+@media only screen and (max-width: 750px) {
+	.quotes {
+		padding: 20px 20px;
+	}
+
+	.qtsdft {
+		font-size: 22px;
+	}
+
+	.qtsdfd {
+		font-size: 10px;
+	}
+}

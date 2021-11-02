@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Panel Login</title>
+	<script type="text/javascript" src="bin/dnjs.min.js"></script>
+	<style type="text/css">
+		* {
+			outline: none;
+			user-select: none;
+			font-family: Rubik Regular, LineIcons Regular;
+		}
+
+		body {
+			margin: 30px 25px;
+			overflow: hidden;
+		}
+
+		h2 {
+			color: #444;
+		}
+
+		input {
+			display: block;
+			height: 35px;
+			border: 2px solid #AAA;
+			padding: 0px 10px;
+			margin-bottom: 10px;
+			width: 210px;
+		}
+
+		input[type=button] {
+			background: #4d94ff;
+			border: none;
+			width: 84px;
+			height: 40px;
+			color: #FFF;
+			cursor: pointer;
+		}
+		input[type=button]:hover { opacity: 0.8; }
+		input[type=button]:active {
+			opacity: 1;
+			background: #3270cd;
+		}
+	</style>
+</head>
+<body>
+	<h2>Login to Admin Panel</h2>
+	<input id="username" name="username" placeholder="Username" maxlength="30" autocomplete="off" type="text">
+	<input id="password" name="password" placeholder="Password" maxlength="30" autocomplete="off" type="password">
+	<input type="button" value="Login" onclick="check({'keyCode' : 13})">
+	<div id="message"></div>
+</body>
+</html>
+
+
+
+
+
+<script type="text/javascript">
+
+	var username = id('username');
+	var password = id('password');
+
+	username.addEventListener('keyup', function(e){ check(e) });
+	password.addEventListener('keyup', function(e){ check(e) });
+
+	function check(e) {
+		if(e.keyCode == 13) {
+			if(username.value == "") { username.focus(); msg("Input all the fields.", "#F00");  }
+			else if(password.value == "") { password.focus(); msg("Input all the fields.", "#F00"); }
+			else { login(); }
+		}
+	}
+
+	function login() {
+		DNJS.ajax.send(location.toString(), {
+			"username" : username.value,
+			"password" : password.value
+		}, function(resp){
+			console.log(resp);
+			if(resp == 'LOGIN_OK') {
+				location = location;
+			} else {
+				msg("Invalid Username or Password", "#F00");
+				username.value = "";
+				password.value = "";
+				username.focus();
+			}
+		});
+	}
+
+	function msg(x, c) {
+		id('message').style.color = c;
+		id('message').innerHTML = x;
+		setTimeout(function(){
+			id('message').innerHTML = "";
+		}, 2500);
+	}
+
+</script>

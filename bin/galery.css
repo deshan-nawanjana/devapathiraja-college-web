@@ -1,0 +1,30 @@
+.galery {
+	width: 35vw;
+	height: 350px;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+.gbtn {
+	line-height: 25px;
+	background: #800;
+	color: #FFF;
+	font-size: 15px;
+	padding: 12px;
+	margin-bottom: 10px;
+	max-width: 300px;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.gbtn:hover {
+	background: #660000;
+}
+
+
+@media only screen and (max-width: 750px) {
+	.galery {
+		width: calc(100vw - 60px);
+		height: auto;
+	}
+}
