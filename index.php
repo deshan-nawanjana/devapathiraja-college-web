@@ -37,7 +37,19 @@
 	</div>
 
 	<div class="quotes">
-		<div class="qtsdft"><q>විජ්ජා උප්පත්තං සෙට්ඨා</q></div>
+		<div class="qtsdft"><q>
+			<div class="quote_outer"><!--
+			--><span class="set_normal">වි</span><!--
+			--><span class="set_closer">ජජා</span><!--
+			--><span class="set_normal">&nbsp;</span><!--
+			--><span class="set_normal">උ</span><!--
+			--><span class="set_closer">පප</span><!--
+			--><span class="set_closer">තතං</span><!--
+			--><span class="set_normal">&nbsp;</span><!--
+			--><span class="set_normal">ස‍ෙ</span><!--
+			--><span class="set_closer">ටඨා</span><!--
+		--></div>
+		</q></div>
 		<div class="qtsdfd">(උපන්නාවූ සියලු දෙය අතරින් විද්‍යාව ශ්‍රේෂ්ඨ වේ.)</div>
 	</div>
 

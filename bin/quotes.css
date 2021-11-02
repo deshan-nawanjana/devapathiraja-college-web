@@ -15,6 +15,15 @@
 	color: #555;
 }
 
+.quote_outer {
+	display: inline;
+}
+
+.quote_outer > .set_closer {
+  letter-spacing: -4px;
+  margin-right: 4px;
+}
+
 @media only screen and (max-width: 750px) {
 	.quotes {
 		padding: 20px 20px;
